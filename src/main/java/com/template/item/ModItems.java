@@ -1,6 +1,6 @@
-package net.kaupenjoe.tutorialmod.item;
+package com.template.item;
 
-import net.kaupenjoe.tutorialmod.TutorialMod;
+import com.template.TutorialMod;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;

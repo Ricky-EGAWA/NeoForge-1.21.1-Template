@@ -1,7 +1,7 @@
-package net.kaupenjoe.tutorialmod.block;
+package com.template.block;
 
-import net.kaupenjoe.tutorialmod.TutorialMod;
-import net.kaupenjoe.tutorialmod.item.ModItems;
+import com.template.TutorialMod;
+import com.template.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;

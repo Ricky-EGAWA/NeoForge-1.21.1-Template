@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "tutorialmod:block/bismuth_block"
+    "all": "template:block/bismuth_block"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "item.template.bismuth": "Bismuth",
+  "item.template.raw_bismuth": "Raw Bismuth",
+
+  "block.template.bismuth_block": "Block of Bismuth",
+  "block.template.bismuth_ore": "Bismuth Ore",
+
+  "creativetab.template.bismuth_items": "Bismuth Items",
+  "creativetab.template.bismuth_blocks": "Bismuth Blocks"
+}
