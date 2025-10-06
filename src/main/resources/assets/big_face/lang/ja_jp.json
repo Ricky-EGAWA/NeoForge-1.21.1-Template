@@ -1,0 +1,5 @@
+{
+  "command.headscale.set.single": "%1$s の頭のサイズを %2$s に設定しました",
+  "command.headscale.set.multiple": "%1$d 人のプレイヤーの頭のサイズを %2$s に設定しました",
+  "command.headscale.get": "%1$s の頭のサイズ: %2$s"
+}

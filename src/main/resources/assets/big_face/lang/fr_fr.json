@@ -1,0 +1,5 @@
+{
+  "command.headscale.set.single": "Taille de la tête de %1$s définie sur %2$s",
+  "command.headscale.set.multiple": "Taille de la tête définie sur %2$s pour %1$d joueurs",
+  "command.headscale.get": "Taille de la tête de %1$s : %2$s"
+}

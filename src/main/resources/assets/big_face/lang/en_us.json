@@ -1,0 +1,5 @@
+{
+  "command.headscale.set.single": "Set %1$s's head scale to %2$s",
+  "command.headscale.set.multiple": "Set head scale to %2$s for %1$d players",
+  "command.headscale.get": "%1$s's head scale: %2$s"
+}

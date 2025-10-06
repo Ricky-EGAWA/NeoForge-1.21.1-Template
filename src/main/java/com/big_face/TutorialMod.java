@@ -1,9 +1,9 @@
-package com.template;
+package com.big_face;
 
-import com.template.block.ModBlocks;
-import com.template.item.ModCreativeModeTabs;
-import com.template.item.ModItems;
-import net.minecraft.world.item.CreativeModeTabs;
+import com.big_face.head.HeadScaleAttachment;
+import com.big_face.head.HeadScaleCommand;
+import com.big_face.head.network.NetworkHandler;
+import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import net.neoforged.api.distmarker.Dist;
@@ -21,17 +21,27 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 @Mod(TutorialMod.MOD_ID)
 public class TutorialMod {
-    public static final String MOD_ID = "template";
+    public static final String MOD_ID = "big_face";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public TutorialMod(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
-        ModCreativeModeTabs.register(modEventBus);
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        // Attachmentの登録
+        HeadScaleAttachment.ATTACHMENT_TYPES.register(modEventBus);
+
+        // ネットワークの初期化
+        NetworkHandler.register(modEventBus);
+
+        // コマンドの登録
+        NeoForge.EVENT_BUS.addListener(this::onRegisterCommands);
+    }
+
+    private void onRegisterCommands(RegisterCommandsEvent event) {
+        HeadScaleCommand.register(event.getDispatcher());
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -39,15 +49,6 @@ public class TutorialMod {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.BISMUTH);
-            event.accept(ModItems.RAW_BISMUTH);
-        }
-
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.BISMUTH_BLOCK);
-            event.accept(ModBlocks.BISMUTH_ORE);
-        }
     }
 
     @SubscribeEvent
