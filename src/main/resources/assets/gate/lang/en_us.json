@@ -1,0 +1,10 @@
+{
+  "block.gate.health_block": "Health Block",
+  "block.gate.power_block": "Power Block",
+  "block.gate.iron_armor_block": "Iron Armor Block",
+  "block.gate.netherite_armor_block": "Netherite Armor Block",
+  "block.gate.sword_block": "Netherite Sword Block",
+  "block.gate.wood_sword_block": "Wood Sword Block",
+
+  "creativetab.template.bismuth_blocks": "Gate Blocks"
+}

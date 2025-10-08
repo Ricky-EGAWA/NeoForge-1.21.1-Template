@@ -1,0 +1,17 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "texture": "gate:block/iron_armor_block",
+    "particle": "gate:block/iron_armor_block"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 7],
+      "to": [16, 16, 9],
+      "faces": {
+        "north": { "texture": "#texture", "uv": [8, 0, 16, 8] },
+        "south": { "texture": "#texture", "uv": [0, 0, 8, 8] }
+      }
+    }
+  ]
+}

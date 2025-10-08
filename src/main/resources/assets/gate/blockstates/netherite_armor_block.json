@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=north,part=0": { "model": "gate:block/netherite_bottom_left" },
+    "facing=north,part=1": { "model": "gate:block/netherite_bottom_right" },
+    "facing=north,part=2": { "model": "gate:block/netherite_top_left" },
+    "facing=north,part=3": { "model": "gate:block/netherite_top_right" },
+
+    "facing=south,part=0": { "model": "gate:block/netherite_bottom_left", "y": 180 },
+    "facing=south,part=1": { "model": "gate:block/netherite_bottom_right", "y": 180 },
+    "facing=south,part=2": { "model": "gate:block/netherite_top_left", "y": 180 },
+    "facing=south,part=3": { "model": "gate:block/netherite_top_right", "y": 180 },
+
+    "facing=east,part=0": { "model": "gate:block/netherite_bottom_left", "y": 90 },
+    "facing=east,part=1": { "model": "gate:block/netherite_bottom_right", "y": 90 },
+    "facing=east,part=2": { "model": "gate:block/netherite_top_left", "y": 90 },
+    "facing=east,part=3": { "model": "gate:block/netherite_top_right", "y": 90 },
+
+    "facing=west,part=0": { "model": "gate:block/netherite_bottom_left", "y": 270 },
+    "facing=west,part=1": { "model": "gate:block/netherite_bottom_right", "y": 270 },
+    "facing=west,part=2": { "model": "gate:block/netherite_top_left", "y": 270 },
+    "facing=west,part=3": { "model": "gate:block/netherite_top_right", "y": 270 }
+  }
+}

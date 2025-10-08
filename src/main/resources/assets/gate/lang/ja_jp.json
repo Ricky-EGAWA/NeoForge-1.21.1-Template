@@ -1,0 +1,10 @@
+{
+  "block.gate.health_block": "体力ブロック",
+  "block.gate.power_block": "攻撃力ブロック",
+  "block.gate.iron_armor_block": "鉄装備ブロック",
+  "block.gate.netherite_armor_block": "ネザライト装備ブロック",
+  "block.gate.sword_block": "ネザライト剣ブロック",
+  "block.gate.wood_sword_block": "木の剣ブロック",
+
+  "creativetab.template.bismuth_blocks": "ブロック"
+}
