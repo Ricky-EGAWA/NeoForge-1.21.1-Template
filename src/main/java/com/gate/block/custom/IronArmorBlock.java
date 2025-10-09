@@ -32,6 +32,5 @@ public class IronArmorBlock extends SwordGateBlock {
                 player.setItemSlot(EquipmentSlot.FEET, new ItemStack(Items.IRON_BOOTS));
             }
         }
-        super.entityInside(state, level, pos, entity);
     }
 }

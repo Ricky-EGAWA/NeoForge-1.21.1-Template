@@ -25,6 +25,5 @@ public class HealthBoostBlock extends SwordGateBlock {
                 player.setHealth(200.0F);
             }
         }
-        super.entityInside(state, level, pos, entity);
     }
 }

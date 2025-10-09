@@ -31,6 +31,5 @@ public class WoodSwordBlock extends SwordGateBlock {
                 player.getInventory().add(Items.WOODEN_SWORD.getDefaultInstance());
             }
         }
-        super.entityInside(state, level, pos, entity);
     }
 }

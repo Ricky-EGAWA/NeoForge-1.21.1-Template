@@ -32,6 +32,5 @@ public class NetheriteArmorBlock extends SwordGateBlock {
                 player.setItemSlot(EquipmentSlot.FEET, new ItemStack(Items.NETHERITE_BOOTS));
             }
         }
-        super.entityInside(state, level, pos, entity);
     }
 }

@@ -36,6 +36,5 @@ public class AttackBoostBlock extends SwordGateBlock {
                 attackDamage.addPermanentModifier(modifier);
             }
         }
-        super.entityInside(state, level, pos, entity);
     }
 }
