@@ -25,15 +25,7 @@ public class AttackBoostBlock extends SwordGateBlock {
             AttributeInstance attackDamage = player.getAttribute(Attributes.ATTACK_DAMAGE);
             if (attackDamage != null) {
                 // 既存のモディファイアを削除（重複防止）
-                attackDamage.removeModifier(MODIFIER_ID);
-
-                // 攻撃力を10倍にするモディファイア（+900%）
-                AttributeModifier modifier = new AttributeModifier(
-                        MODIFIER_ID,
-                        999.0, // +900%（元の値×10にするため）
-                        AttributeModifier.Operation.ADD_MULTIPLIED_BASE
-                );
-                attackDamage.addPermanentModifier(modifier);
+                attackDamage.setBaseValue(1000); // 基本攻撃力を1000に設定
             }
         }
     }
