@@ -3,9 +3,6 @@ package com.gate;
 import com.gate.block.ModBlocks;
 import com.gate.item.ModCreativeModeTabs;
 import com.gate.item.ModItems;
-import net.minecraft.world.item.CreativeModeTabs;
-import org.slf4j.Logger;
-import com.mojang.logging.LogUtils;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -22,7 +19,6 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 @Mod(TutorialMod.MOD_ID)
 public class TutorialMod {
     public static final String MOD_ID = "gate";
-    private static final Logger LOGGER = LogUtils.getLogger();
 
     public TutorialMod(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
